@@ -6,20 +6,26 @@ from svgpathtools import parse_path
 from string import ascii_lowercase
 import tempfile
 from math import ceil
+from pathlib import Path
 
 top = 33
 middle = 50
 bottom = 81
 extent = 6
 
-# font = fontforge.font()
-font = fontforge.open('happy_virus.sfd')
-font.em = top + middle + bottom
-font.ascent = top + middle
-font.descent = bottom
-
 for variant in ('happy_virus', 'happy_virus_bold'):
+    path = Path(f'{variant}.sdf')
+    if path.exists():
+        font = fontforge.open(path)
+    else:
+        font = fontforge.font()
+
+    font.em = top + middle + bottom
+    font.ascent = top + middle
+    font.descent = bottom
+
     all_svg = etree.parse(f'{variant}.svg')
+
     for c in ascii_lowercase:
         element = all_svg.xpath(f'//*[@id="{c}"]')[0]
         d = parse_path(element.get("d"))
@@ -43,3 +49,6 @@ for variant in ('happy_virus', 'happy_virus_bold'):
             glyph.transform(psMat.translate(0, -top))
 
     font.save(f'{variant}.sfd')
+    out_dir = Path("out")
+    out_dir.mkdir(exist_ok=True)
+    font.generate(str(out_dir / f'{variant}.ttf'))
