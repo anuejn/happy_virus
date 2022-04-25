@@ -13,7 +13,7 @@ middle = 50
 bottom = 81
 extent = 6
 
-for variant in ('happy_virus', 'happy_virus_bold'):
+for variant in ['happy_virus']:
     path = Path(f'{variant}.sfd')
     if path.exists():
         font = fontforge.open(str(path))
@@ -49,6 +49,8 @@ for variant in ('happy_virus', 'happy_virus_bold'):
             glyph.transform(psMat.translate(0, -top))
 
     font.save(f'{variant}.sfd')
+
     out_dir = Path("out")
     out_dir.mkdir(exist_ok=True)
+    font.em = 1024
     font.generate(str(out_dir / f'{variant}.ttf'))
