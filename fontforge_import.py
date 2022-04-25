@@ -14,9 +14,9 @@ bottom = 81
 extent = 6
 
 for variant in ('happy_virus', 'happy_virus_bold'):
-    path = Path(f'{variant}.sdf')
+    path = Path(f'{variant}.sfd')
     if path.exists():
-        font = fontforge.open(path)
+        font = fontforge.open(str(path))
     else:
         font = fontforge.font()
 
