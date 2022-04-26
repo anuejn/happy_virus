@@ -7,7 +7,7 @@
    viewBox="0 0 1430.1836 167.13847"
    version="1.1"
    id="svg5"
-   sodipodi:docname="happy_virus_bold.svg"
+   sodipodi:docname="happy_virus.svg"
    inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -23,13 +23,13 @@
      inkscape:pagecheckerboard="false"
      inkscape:document-units="mm"
      showgrid="true"
-     inkscape:zoom="0.37516956"
-     inkscape:cx="4284.7292"
-     inkscape:cy="747.66193"
+     inkscape:zoom="0.43432681"
+     inkscape:cx="4847.7321"
+     inkscape:cy="90.945342"
      inkscape:window-width="1920"
-     inkscape:window-height="1211"
+     inkscape:window-height="1248"
      inkscape:window-x="0"
-     inkscape:window-y="0"
+     inkscape:window-y="32"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1"
      showguides="true"
@@ -201,5 +201,29 @@
        id="z"
        style="fill:none;stroke:#000000;stroke-width:9.26041667;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
        d="m 1403.4815,25 c 0,12.389417 10.1137,22.433023 22.5896,22.43302 M 1403.4815,25 c 0,-12.389416 -10.1136,-22.4330227 -22.5895,-22.4330198" />
+    <circle
+       id="path884"
+       style="fill:#000000;stroke:#000000;stroke-width:0.264583"
+       cx="41.949932"
+       cy="10.092466"
+       r="0.50567329" />
+    <circle
+       id="path886"
+       style="fill:#000000;stroke:#000000;stroke-width:0.264583"
+       cx="41.949932"
+       cy="10.092466"
+       r="0.50567329" />
+    <circle
+       id="path888"
+       style="fill:#000000;stroke:#000000;stroke-width:0.264583"
+       cx="67.006004"
+       cy="37.61618"
+       r="0.50567329" />
+    <circle
+       id="path890"
+       style="fill:#000000;stroke:#000000;stroke-width:0.264583"
+       cx="67.006004"
+       cy="37.61618"
+       r="0.50567329" />
   </g>
 </svg>
